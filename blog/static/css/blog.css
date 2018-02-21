@@ -1,9 +1,15 @@
 .techfont{
     font-family: 'Kavivanar', cursive;
     font-size: 1.5em;
+
 }
 .titlefont{
     font-family: 'Kavivanar', cursive;
+    font-weight: bold;
+}
+.contentfont{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
 }
 .bigbrand{
     font-size: 1.5em;
@@ -17,12 +23,24 @@
 }
 .posttitle{
     font-family: 'Kavivanar', cursive;
-    font-size: 1.5em;
+    font-weight: bold;
     text-align: center;
 }
+.textinputclass{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8; 
+}
 .postcontent{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5em;
+    width: 70%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
 }
 .btn-comment{
     position: absolute;
