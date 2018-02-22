@@ -33,7 +33,7 @@
     background-color: #f8f8f8; 
 }
 .postcontent{
-    width: 70%;
+    width: 100%;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -42,10 +42,8 @@
     resize: none;
 }
 .btn-comment{
-    position: absolute;
-    right: 0px
+    margin-left: 80%;
 }
 .date{
-    position: absolute;
-    right: 0px;
+    margin-left: 75%;
 }
