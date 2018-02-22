@@ -20,13 +20,11 @@
         <span class="glyphicon glyphicon-remove"></span>
     </a>
 {% endif %}
-
-<hr>
 <a class="btn btn-default btn-comment" href="{% url 'add_comment_to_post' pk=post.pk %}">Add Comment</a>
-
-<div class="container">
+<hr>
+<br>
+<div class="container col-md-12">
     {% for comment in post.comments.all %}
-    <br>
         {% if user.is_authenticated or comment.approved_comment %}
             {% if not comment.approved_comment %}
             <a class="btn btn-default" href="{% url 'comment_remove' pk=comment.pk %}">
@@ -39,6 +37,7 @@
             <p>{{ comment.text|safe|linebreaks }}</p>
             <p>Posted By: {{ comment.author }}</p>
             <div class="date">{{ comment.created_date }}</div>
+            <hr>
         {% endif %}
         {% empty %}
         <p>No Comments!</p>
