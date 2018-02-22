@@ -33,6 +33,7 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
     redirect_field_name = 'blog/post_detail.html'
     form_class = PostForm
     model = Post
+    template_name_suffix = '_update_form'
 
 class PostDeleteView(LoginRequiredMixin, DeleteView):
     model = Post
