@@ -9,6 +9,7 @@
 {% else %}
     <a href="{% url 'post_publish' pk=post.pk %}" class="btn btn-default">Publish</a>
 {% endif %}
+    <br>
     <div class="contentfont">{{ post.text|safe|linebreaksbr }}</div>
 
 {% if user.is_authenticated %}
@@ -35,7 +36,6 @@
                 <span class="glyphicon glyphicon-ok"></span>
             </a>
             {% endif %}
-
             <p>{{ comment.text|safe|linebreaks }}</p>
             <p>Posted By: {{ comment.author }}</p>
             <div class="date">{{ comment.created_date }}</div>

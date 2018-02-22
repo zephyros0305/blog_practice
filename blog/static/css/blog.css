@@ -10,7 +10,7 @@
 .contentfont{
     font-family: 'Roboto', sans-serif;
     width: 100%;
-    word-break: break-all;
+    word-break: break-word;
     font-size: 1.5em;
 }
 .bigbrand{
@@ -19,9 +19,6 @@
 .centerstage{
     margin-left: auto;
     margin-right: auto;
-}
-.postdate{
-    text-align: center;
 }
 .posttitle{
     font-family: 'Kavivanar', cursive;
